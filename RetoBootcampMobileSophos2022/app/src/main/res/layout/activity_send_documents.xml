@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/send_documents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SendDocuments">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableLeft="@drawable/keyboard_backspace"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Regresar"
+        android:textAllCaps="false"
+        android:textColor="#7800DD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/send_documentation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:lineHeight="20dp"
+        android:text="Envío de documentación"
+        android:textColor="#262626"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+    <ImageButton
+        android:id="@+id/add_photo"
+        android:layout_width="68dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_documentation"
+        app:srcCompat="@drawable/add_a_photo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerTypeID"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:height="48dp"
+        android:contentDescription="Tipo de documento"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_photo" />
+
+
+    <EditText
+        android:id="@+id/document_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:height="48dp"
+        android:autoText="true"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Numero de documento"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#262626"
+        android:textColorHighlight="#262626"
+        android:textColorHint="#262626"
+        android:textColorLink="#262626"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerTypeID"
+        app:layout_constraintStart_toStartOf="@+id/spinnerTypeID"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTypeID" />
+
+    <ImageView
+        android:id="@+id/badge"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/document_num"
+        app:layout_constraintTop_toTopOf="@+id/document_num"
+        app:srcCompat="@drawable/badge" />
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:height="30dp"
+        android:autoText="true"
+        android:fontFamily="@font/montserrat"
+        android:hint="Nombres"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:textAlignment="textStart"
+        android:textColor="#262626"
+        android:textColorHighlight="#262626"
+        android:textColorHint="#262626"
+        android:textColorLink="#262626"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/document_num"
+        app:layout_constraintStart_toStartOf="@+id/document_num"
+        app:layout_constraintTop_toBottomOf="@+id/document_num" />
+
+    <EditText
+        android:id="@+id/txt_lastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:height="30dp"
+        android:autoText="true"
+        android:hint="Apellidos"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:textAlignment="textStart"
+        android:textColor="#262626"
+        android:textColorHighlight="#262626"
+        android:textColorHint="#262626"
+        android:textColorLink="#262626"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_name"
+        app:layout_constraintStart_toStartOf="@+id/txt_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoText="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:textColor="#262626"
+        android:textColorHighlight="#262626"
+        android:textColorHint="#262626"
+        android:textColorLink="#262626"
+        app:layout_constraintEnd_toEndOf="@+id/txt_lastName"
+        app:layout_constraintStart_toStartOf="@+id/txt_lastName"
+        app:layout_constraintTop_toBottomOf="@+id/txt_lastName" />
+
+    <EditText
+        android:id="@+id/type_attached"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autoText="true"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Tipo de adjunto"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColorHighlight="#262626"
+        android:textColorHint="#262626"
+        android:textColorLink="#262626"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCity"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCity"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCity" />
+
+    <Button
+        android:id="@+id/find_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FE1191"
+        android:drawableLeft="@drawable/backup"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/documento"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@+id/type_attached"
+        app:layout_constraintTop_toBottomOf="@+id/type_attached"
+        app:strokeColor="#FE1191"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#FE1191"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Enviar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/type_attached"
+        app:layout_constraintStart_toStartOf="@+id/type_attached"
+        app:layout_constraintTop_toBottomOf="@+id/type_attached"
+        app:strokeColor="#FE1191"
+        app:strokeWidth="1dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/ciudad"
+        app:layout_constraintEnd_toEndOf="@+id/txt_email"
+        app:layout_constraintStart_toStartOf="@+id/txt_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RetoBootcampMobileSophos2022</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="documento">Documento</string>
+</resources>

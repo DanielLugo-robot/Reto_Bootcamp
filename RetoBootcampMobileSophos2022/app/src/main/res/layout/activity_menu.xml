@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MenuActivity">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="211dp"
+
+        android:fontFamily="@font/montserrat_semibold"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp"
+        android:textAlignment="textStart"
+        android:textColor="#7800FD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/menu"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
+        app:srcCompat="@drawable/plantilla_1_5x" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="169dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="250dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="208dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Estas son las opciones que tenemos para ti"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="380dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:strokeColor="#FE1191"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/description" />
+
+        <TextView
+            android:id="@+id/textSendDocuments"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingTop="10dp"
+            android:text="Enviar documentos"
+            android:textAlignment="center"
+            android:textColor="#FE1191"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSendDocuments"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/arrow_right_alt"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="#FE1191"
+            android:textSize="14sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#FE1191"
+            app:strokeWidth="2dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="380dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="435dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:strokeColor="#4500FF"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/plagiarism" />
+
+        <TextView
+            android:id="@+id/textViewDocuments"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingTop="10dp"
+            android:text="Ver documentos"
+            android:textAlignment="textStart"
+            android:textColor="#4500FF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnViewDocuments"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/arrow_right_purple"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="#4500FF"
+            android:textSize="14sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#4500FF"
+            app:strokeWidth="2dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="380dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="545dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:strokeColor="#05667C"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:id="@+id/imageLocation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/location_on" />
+
+        <TextView
+            android:id="@+id/textOffices"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingTop="10dp"
+            android:text="Oficinas"
+            android:textAlignment="textStart"
+            android:textColor="#05667C"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnOfiices"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/arrow_right_green"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="#05667C"
+            android:textSize="14sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#05667C"
+            app:strokeWidth="2dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
